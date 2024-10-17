@@ -9,3 +9,8 @@ print(a1 + 5)
 # 3x3 identity matrix using numpy
 
 print(np.identity(3))
+
+
+# reshape a 1D array of shape (12,) into a 3D array of shape (2, 2, 3)
+
+print(np.arange(12,).reshape(2, 2, 3))

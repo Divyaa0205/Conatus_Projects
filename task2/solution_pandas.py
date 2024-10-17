@@ -17,7 +17,7 @@ data_set = {'ID': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
         'Country': ['USA', 'Canada', 'UK', 'Australia', 'Germany', 'France', 'India', 'China', 'Japan', 'Brazil'],
         'Score': [85, 90, 78, 88, 92, 80, 87, 91, 83, 89] }
 df = pd.DataFrame(data_set)
-print(df.drop(3))
+print("\n\n",df.drop(3))
 
 
 
@@ -28,5 +28,17 @@ print("\n",df.rename(columns={'ID':'Unique_ID'}))
 # Changing the data type of the column "salary" from int to float:
 
 data_frame['Salary'] = data_frame['Salary'].astype(float)
-print(data_frame['Salary'].dtypes)
-print(data_frame)
+print("\n\n",data_frame['Salary'].dtypes)
+print("\n",data_frame)
+
+# method would you use to drop any rows that contain NaN values
+_data = {'Name': ['Alice', 'Bob', None],
+        'Age': [25, None, 30],
+        'Salary': [50000, 60000, None]}
+dataframe = pd.DataFrame(_data)
+print("\n",dataframe)
+dff = dataframe.dropna()
+print("\n\n",dff,"\n")
+
+
+

@@ -5,6 +5,10 @@ data = { 'Name': ['John', 'Doe'],'Age': [28, 30],'Country': ['USA', 'Canada'], '
 
 print(pd.DataFrame(data))
 
+
+print("\n\n")
+
+
 # drop the row with index 3 from the DataFrame df
 data_set = {'ID': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
         'Name': ['Alice', 'Bob', 'Charlie', 'David', 'Eva', 'Frank', 'Grace', 'Hannah', 'Isaac', 'Jack'],
@@ -14,3 +18,7 @@ data_set = {'ID': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
 df = pd.DataFrame(data_set)
 print(df.drop(3))
 
+
+
+# Rename the column "old_name" to "new_name"
+print("\n",df.rename(columns={'ID':'Unique_ID'}))

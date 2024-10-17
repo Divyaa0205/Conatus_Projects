@@ -20,4 +20,5 @@ print(df.drop(3))
 
 
 
-# 
+# Rename the column "old_name" to "new_name"
+print("\n",df.rename(columns={'ID':'Unique_ID'}))

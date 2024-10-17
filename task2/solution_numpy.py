@@ -20,3 +20,8 @@ print(np.arange(12,).reshape(2, 2, 3))
 
 arr = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
 print(arr[1, 2])
+
+
+# create a new array that contains only the even numbers from the array arr = np.array([1, 2, 3, 4, 5, 6])
+arr = np.array([1, 2, 3, 4, 5, 6])
+print(arr[arr % 2 == 0])
